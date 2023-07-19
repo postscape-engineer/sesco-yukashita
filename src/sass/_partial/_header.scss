@@ -1,0 +1,28 @@
+/*==============================================================================
+Header
+============================================================================= */
+@include sp {
+    .header {
+        &__inner {
+            display: flex;
+            align-items: center;
+            height: rem(115);
+        }
+        &__logo {
+            width: rem(287);
+        }
+    }
+}
+@include pc {
+    .header {
+        &__inner {
+            display: flex;
+            align-items: center;
+            width: 1200px;
+            height: 80px;
+        }
+        &__logo {
+            width: 242px;
+        }
+    }
+}

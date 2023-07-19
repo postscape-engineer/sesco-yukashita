@@ -1,0 +1,121 @@
+/*==============================================================================
+cta
+============================================================================= */
+@include sp {
+    .cta {
+        &--bg {
+            position: relative;
+            z-index: 2;
+            margin-top: rem(-25);
+            padding: rem(31) 0 rem(37);
+            background: url(../images/cta_bg01_sp.webp) top center/ rem(750)
+                    no-repeat,
+                linear-gradient(180deg, transparent rem(23), #94541c rem(23));
+        }
+        &__ttl01 {
+            width: rem(613);
+            margin-left: rem(40);
+        }
+        &__txt01 {
+            margin-top: rem(10);
+            text-align: center;
+            color: #fff;
+            font-size: rem(40);
+            font-weight: bold;
+            letter-spacing: -0.02em;
+            .small {
+                font-size: rem(30);
+            }
+        }
+        &__box {
+            position: relative;
+            margin: rem(30) auto 0;
+            padding: rem(40) 0 rem(50);
+            background-color: #fff;
+        }
+        &__medal {
+            display: none;
+        }
+        &__ttl02 {
+            width: rem(500);
+            margin: 0 auto;
+        }
+        &__tel {
+            width: rem(650);
+            margin: rem(25) auto 0;
+        }
+        &__btn01 {
+            margin: rem(20) auto 0;
+        }
+        &__note {
+            margin-top: rem(15);
+            font-size: rem(26);
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+}
+/*==============================================================================
+cta
+============================================================================= */
+@include pc {
+    .cta {
+        &--bg {
+            position: relative;
+            z-index: 2;
+            margin-top: -22px;
+            padding: 27px 0 50px;
+            background: url(../images/cta_bg01.webp) top center/ 2000px
+                    no-repeat,
+                linear-gradient(180deg, transparent 20px, #94541c 20px);
+        }
+        &__ttl01 {
+            width: 648px;
+            margin: 0 auto;
+        }
+        &__txt01 {
+            margin-top: 15px;
+            text-align: center;
+            color: #fff;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: -0.02em;
+            .small {
+                font-size: 20px;
+            }
+        }
+        &__box {
+            position: relative;
+            width: 840px;
+            margin: 15px auto 0;
+            padding: 30px 0 25px;
+            background-color: #fff;
+        }
+        &__medal {
+            position: absolute;
+            top: -53px;
+            left: -25px;
+            width: 146px;
+        }
+        &__ttl02 {
+            width: 498px;
+            margin: 0 auto;
+        }
+        &__tel {
+            width: 643px;
+            margin: 24px auto 0;
+        }
+
+        &__btn01 {
+            width: 480px;
+            margin: 13px auto 0;
+        }
+        &__note {
+            margin-top: 20px;
+            font-size: 14px;
+            letter-spacing: 0em;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+}

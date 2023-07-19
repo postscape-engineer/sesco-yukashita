@@ -1,0 +1,193 @@
+/*==============================================================================
+ref
+============================================================================= */
+@include sp {
+    .ref {
+        &__bg01 {
+            padding: rem(90) 0 0;
+            background: url(../images/ref_bg01_sp.webp) top center/ cover
+                no-repeat;
+        }
+        &__ttl01 {
+            position: relative;
+            text-align: center;
+            font-size: rem(34);
+            font-weight: 900;
+            .bg {
+                display: inline-block;
+                margin-right: rem(5);
+                font-size: rem(58);
+                line-height: 1.1;
+                border-radius: rem(15);
+                font-weight: 900;
+                background-color: #ffde00;
+            }
+            .txt {
+                display: inline-block;
+                margin-top: rem(10);
+                line-height: 1.6;
+            }
+            .orange {
+                font-size: rem(40);
+                line-height: 1;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: rem(-135);
+                left: 50%;
+                width: rem(143);
+                height: rem(118);
+                transform: translateX(-50%);
+                background: url(../images/ref_arrow01.webp) top center/ contain
+                    no-repeat;
+            }
+        }
+        &__img01 {
+            width: rem(724);
+            margin: 0 0 0 rem(-10);
+        }
+        &__ttl02 {
+            width: rem(750);
+            transform: translateX(rem(-30));
+            min-height: rem(290);
+            margin-top: rem(45);
+            padding-top: rem(50);
+            background: url(../images/fv_bg02_sp.webp) top center/ cover
+                no-repeat;
+            text-align: center;
+            font-weight: 900;
+            font-size: rem(34);
+            line-height: 1.5;
+            .bg {
+                position: relative;
+                display: inline-block;
+                font-size: rem(44);
+                line-height: 1;
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    z-index: -1;
+                    bottom: rem(-5);
+                    left: 0;
+                    width: 100%;
+                    height: rem(30);
+                    border-radius: rem(14);
+                    background-color: #fff;
+                }
+            }
+            .num {
+                font-size: rem(71);
+                font-weight: 900;
+                line-height: 1;
+            }
+            .txt {
+                display: inline-block;
+                margin-top: rem(15);
+            }
+            .ita {
+                display: inline-block;
+                margin-left: rem(-10);
+                font-style: italic;
+            }
+        }
+    }
+}
+/*==============================================================================
+ref
+============================================================================= */
+@include pc {
+    .ref {
+        &__bg01 {
+            padding: 62px 0 0;
+            background: url(../images/ref_bg01.webp) top center/ 2000px
+                no-repeat;
+        }
+        &__ttl01 {
+            position: relative;
+            text-align: center;
+            font-size: 34px;
+            font-weight: 900;
+            .bg {
+                display: inline-block;
+                margin-right: 10px;
+                font-size: 50px;
+                line-height: 1.1;
+                border-radius: 15px;
+                font-weight: 900;
+                background-color: #ffde00;
+            }
+            .txt {
+                display: inline-block;
+                margin-top: 10px;
+                font-size: 26px;
+                line-height: 1.7;
+            }
+            .orange {
+                font-size: 30px;
+                line-height: 1;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -108px;
+                left: 50%;
+                width: 117px;
+                height: 98px;
+                transform: translateX(-50%);
+                background: url(../images/ref_arrow01.webp) top center/ contain
+                    no-repeat;
+            }
+        }
+        &__img01 {
+            width: 1002px;
+            margin-top: -40px;
+        }
+        &__ttl02 {
+            width: 2000px;
+            transform: translateX(-500px);
+            min-height: 188px;
+            margin-top: 60px;
+            padding-top: 40px;
+            background: url(../images/fv_bg02.webp) top center/ 2000px no-repeat;
+            text-align: center;
+            font-weight: 900;
+            font-size: 28px;
+            line-height: 1.5;
+            .bg {
+                position: relative;
+                display: inline-block;
+                font-size: 38px;
+                line-height: 1;
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    z-index: -1;
+                    bottom: -5px;
+                    left: 0;
+                    width: 100%;
+                    height: 23px;
+                    border-radius: 11px;
+                    background-color: #fff;
+                }
+            }
+            .num {
+                font-size: 60px;
+                font-weight: 900;
+                line-height: 1;
+            }
+            .txt {
+                font-size: 26px;
+            }
+            .ita {
+                display: inline-block;
+                margin-left: -5px;
+                font-style: italic;
+            }
+        }
+    }
+}

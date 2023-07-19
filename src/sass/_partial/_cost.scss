@@ -1,0 +1,88 @@
+/*==============================================================================
+cost
+============================================================================= */
+@include sp {
+    .cost {
+        &--bg {
+            padding: rem(57) 0 0;
+        }
+        &__ttl01 {
+            height: rem(118);
+            padding-top: rem(15);
+            text-align: center;
+            font-size: rem(44);
+            font-weight: 900;
+            background: url(../images/cost_bg01_sp.webp) top center/ 100% 100%
+                no-repeat;
+        }
+        &__item {
+            position: relative;
+            font-weight: 900;
+            padding: rem(15) 0 rem(15) rem(60);
+            border-bottom: rem(4) solid #ffde00;
+            font-size: rem(32);
+            letter-spacing: 0;
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: rem(28);
+                left: rem(15);
+                width: rem(29);
+                height: rem(29);
+                background: url(../images/cost_check01.webp) top center/ contain
+                    no-repeat;
+            }
+        }
+        &__ttl02 {
+            width: rem(750);
+            transform: translateX(rem(-30));
+            margin: rem(40) 0 rem(0);
+        }
+    }
+}
+/*==============================================================================
+cost
+============================================================================= */
+@include pc {
+    .cost {
+        &--bg {
+            padding: 65px 0 0;
+        }
+
+        &__ttl01 {
+            height: 96px;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 36px;
+            font-weight: 900;
+            background: url(../images/cost_bg01.webp) top center/ 100% no-repeat;
+        }
+
+        &__item {
+            position: relative;
+            font-weight: 900;
+            margin-top: 20px;
+            padding: 0 0 11px 35px;
+            letter-spacing: 0;
+            border-bottom: 1px solid #ffde00;
+            font-size: 24px;
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 8px;
+                left: 0;
+                width: 23px;
+                height: 23px;
+                background: url(../images/cost_check01.webp) top center/ contain
+                    no-repeat;
+            }
+        }
+        &__ttl02 {
+            width: 2000px;
+            transform: translateX(-500px);
+            margin: 40px 0 -130px;
+        }
+    }
+}

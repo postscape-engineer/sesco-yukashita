@@ -1,0 +1,128 @@
+/*==============================================================================
+fv
+============================================================================= */
+@include sp {
+    .fv {
+        &__bg01 {
+            padding-bottom: rem(75);
+            background: url(../images/fv_bg01_sp.webp) top rem(40) center/ cover
+                no-repeat;
+        }
+        &__lead {
+            width: rem(750);
+            transform: translateX(rem(-30));
+        }
+        &__ttl01 {
+            width: rem(717);
+            margin: rem(37) 0 0 rem(-14);
+        }
+        &__flex {
+            margin-top: rem(35);
+        }
+        &__img01 {
+            width: rem(466);
+            margin: rem(-20) 0 0 rem(-25);
+        }
+        &__img02 {
+            width: rem(420);
+            margin-top: rem(-5);
+        }
+        &__bg02 {
+            margin-top: rem(-45);
+            padding: rem(45) 0 rem(25);
+            background: url(../images/fv_bg02_sp.webp) top center/ cover
+                no-repeat;
+        }
+        &__comment {
+            display: none;
+        }
+        &__tel {
+            width: rem(650);
+            margin: 0 auto;
+        }
+
+        &__note {
+            margin-top: rem(5);
+            font-size: rem(24);
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+/*==============================================================================
+fv
+============================================================================= */
+@include pc {
+    .fv {
+        &__bg01 {
+            padding-bottom: 88px;
+            background: url(../images/fv_bg01.webp) top -80px center/ 2000px no-repeat;
+        }
+
+        &__lead {
+            width: 2000px;
+            transform: translateX(-500px);
+        }
+        &__ttl01 {
+            width: 937px;
+            margin: 15px 0 0 -85px;
+        }
+        &__flex {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            padding-left: 175px;
+        }
+        &__img01 {
+            width: 366px;
+        }
+        &__img02 {
+            width: 197px;
+            margin-right: 10px;
+            padding-top: 25px;
+        }
+        &__bg02 {
+            min-height: 188px;
+            margin-top: -65px;
+            padding-top: 28px;
+            background: url(../images/fv_bg02.webp) top center/ 2000px no-repeat;
+        }
+        &__comment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 255px;
+            height: 38px;
+            margin: 0 auto;
+            font-size: 22px;
+            color: #f75001;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+            background: url(../images/fv_bg03.webp) top center/ cover no-repeat;
+            .ita {
+                display: inline-block;
+                margin-left: -5px;
+                font-style: italic;
+            }
+        }
+        &__flex02 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        &__tel {
+            width: 565px;
+            margin-right: 35px;
+        }
+        &__btn01 {
+            width: 340px;
+        }
+        &__note {
+            margin-top: 5px;
+            height: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}

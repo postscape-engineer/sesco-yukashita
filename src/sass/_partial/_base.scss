@@ -1,0 +1,354 @@
+/* =============================================================================
+Reset style
+========================================================================== */
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html {
+    color: #111;
+    background: #fff;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    position: relative;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset,
+img {
+    border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+ol,
+ul {
+    list-style: none;
+}
+caption,
+th {
+    text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+a,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+    outline: none;
+}
+q:before,
+q:after {
+    content: "";
+}
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal;
+}
+sup {
+    vertical-align: text-top;
+}
+sub {
+    vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-size: 100%;
+}
+legend {
+    color: #111;
+}
+#yui3-css-stamp.cssreset {
+    display: none;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* =============================================================================
+Image
+========================================================================== */
+a,
+button {
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+}
+img {
+    width: 100%;
+}
+
+/* =============================================================================
+Basic style
+========================================================================== */
+html {
+    overflow-x: hidden;
+}
+body {
+    position: relative;
+    overflow-x: hidden;
+    word-break: break-all;
+    color: #111;
+    font-family: "zen-kaku-gothic-new", YuGothic, "Yu Gothic",
+        "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo,
+        sans-serif;
+}
+.minchou {
+    font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+        "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "MS Mincho",
+        "HiraMinProN-W3", serif;
+}
+.zen {
+    font-family: "zen-kaku-gothic-new";
+    font-style: normal;
+}
+button {
+    font-family: "zen-kaku-gothic-new";
+    font-style: normal;
+}
+/*==============================================================================
+Media
+============================================================================= */
+$media-pc: 769px;
+$media-sp: 768px;
+@mixin pc {
+    @media screen and (min-width: $media-pc) {
+        @content;
+    }
+}
+@mixin sp {
+    @media screen and (max-width: $media-sp) {
+        @content;
+    }
+}
+@function rem($num) {
+    @return ($num) / 100 + rem;
+}
+
+/*==============================================================================
+Responsive
+============================================================================= */
+@include sp {
+    html {
+        font-size: 13.3333vw;
+    }
+    .inner {
+        width: 6.9rem;
+        margin: 0 auto;
+        position: relative;
+        font-size: rem(26);
+        letter-spacing: 0.06em;
+    }
+    .pc-only {
+        display: none;
+    }
+    .sp-only {
+        display: block;
+    }
+    p {
+        font-size: rem(26);
+        line-height: 1.6;
+        letter-spacing: 0.06em;
+    }
+}
+
+@include pc {
+    .inner {
+        width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        letter-spacing: 0.06em;
+    }
+    .pc-only {
+        display: block;
+    }
+    .sp-only {
+        display: none;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 0.06em;
+    }
+    a,
+    button {
+        &:hover {
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+    }
+}
+.blue {
+    color: #031264;
+}
+.orange {
+    color: #f75201;
+}
+.brown {
+    color: #94541c;
+}
+.bold {
+    font-weight: bold;
+}
+img {
+    display: block;
+    vertical-align: bottom;
+    max-width: 100%;
+}
+a {
+    color: #111;
+}
+h2,
+h3,
+h4 {
+    letter-spacing: 0.06em;
+    line-height: 1.6;
+}
+*:focus {
+    outline: none;
+}
+
+/*----------------------------------------------------------
+    validation message
+----------------------------------------------------------*/
+.errmsg-box {
+    margin: 1em 0 2em;
+    padding: 1em;
+    color: #cb1d46;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    background: #ffe8f7;
+  }
+  
+  .form-table .error {
+    background: #ffe8e8;
+  }
+  
+  .form-table .error-msg-balloon {
+    position: relative;
+    margin: 14px 0 0;
+    padding: 3px 0.5em;
+    background: #ff8080;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .form-table .error-msg-balloon span:before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #ff8080 transparent transparent transparent;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /*----------------------------------------------------------
+        validation message
+    ----------------------------------------------------------*/
+    .errmsg-box {
+      margin: 1em 0 2em;
+      padding: 1em;
+      color: #cb1d46;
+      font-size: 0.25rem;
+      font-weight: bold;
+      line-height: normal;
+      background: #ffe8f7;
+    }
+    .form-table .error {
+      background: #ffe8e8;
+    }
+    .form-table .error-msg-balloon {
+      position: relative !important;
+      top: 0 !important;
+      left: 0 !important;
+      margin: 0.1rem 0 0;
+      padding: 0.05rem 0.5em;
+      background: #ff8080;
+      color: #fff;
+      font-size: 0.22rem;
+      text-align: center;
+      border-radius: 0.04rem;
+    }
+    .form-table .error-msg-balloon span:before {
+      content: "";
+      position: absolute;
+      top: -0.19rem;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-width: 0.1rem;
+      border-style: solid;
+      border-color: transparent transparent #ff8080 transparent;
+    }
+  }

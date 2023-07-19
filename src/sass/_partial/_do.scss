@@ -1,0 +1,80 @@
+/*==============================================================================
+do
+============================================================================= */
+@include sp {
+    .do {
+        &--bg {
+            padding: rem(45) 0 rem(50);
+            background-color: #f5f5f5;
+        }
+        &__ttl01 {
+            width: rem(630);
+            margin: 0 auto;
+        }
+        &__wrap {
+            position: relative;
+            overflow-x: auto;
+            overscroll-behavior-x: none;
+            margin-top: rem(55);
+            padding-bottom: rem(20);
+        }
+        &__icon {
+            position: absolute;
+            top: rem(350);
+            left: rem(200);
+            width: rem(267);
+        }
+        &__icon02 {
+            position: absolute;
+            top: rem(52);
+            left: rem(75);
+            width: rem(110);
+            animation: Anime 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes Anime {
+            0% {
+                transform: translateX(rem(-20));
+            }
+            50% {
+                transform: translateX(rem(20));
+            }
+            100% {
+                transform: translateX(rem(-20));
+            }
+        }
+        &__img01 {
+            width: rem(1150);
+        }
+        &__note {
+            margin-top: rem(30);
+            color: #666666;
+            font-size: rem(22);
+            font-weight: 500;
+        }
+    }
+}
+/*==============================================================================
+do
+============================================================================= */
+@include pc {
+    .do {
+        &--bg {
+            padding: 45px 0 100px;
+            background-color: #f5f5f5;
+        }
+        &__ttl01 {
+            width: 900px;
+        }
+        &__img01 {
+            margin-top: 20px;
+            width: 999px;
+        }
+        &__note {
+            margin-top: 15px;
+            color: #666666;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+}

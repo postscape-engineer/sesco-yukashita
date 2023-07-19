@@ -1,0 +1,47 @@
+/*==============================================================================
+shut
+============================================================================= */
+@include sp {
+    .shut {
+        &--bg {
+            background: url(../images/shut_bg01_sp.webp) top center/ cover
+                no-repeat;
+        }
+        &__img01 {
+            width: rem(750);
+            transform: translateX(rem(-30));
+        }
+        &__txt01 {
+            position: relative;
+            z-index: 2;
+            width: rem(516);
+            margin: rem(24) auto 0;
+        }
+        &__ttl02 {
+            margin-top: rem(-15);
+        }
+    }
+}
+/*==============================================================================
+shut
+============================================================================= */
+@include pc {
+    .shut {
+        &--bg {
+            background: url(../images/shut_bg01.webp) top center/ cover
+                no-repeat;
+        }
+        &__img01 {
+            width: 2000px;
+            transform: translateX(-500px);
+        }
+        &__txt01 {
+            width: 576px;
+            margin: 40px auto 0;
+        }
+        &__ttl02 {
+            width: 999px;
+            margin-top: -13px;
+        }
+    }
+}

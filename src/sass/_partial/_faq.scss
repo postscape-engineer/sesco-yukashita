@@ -1,0 +1,179 @@
+/*==============================================================================
+faq
+============================================================================= */
+@include sp {
+    .faq {
+        &--bg {
+            padding: rem(100) 0 rem(80);
+            background-color: #f5f5f5;
+        }
+        &__ttl01 {
+            width: rem(449);
+            margin: 0 auto;
+        }
+        &__list {
+            margin-top: rem(70);
+        }
+        &__item {
+            margin-top: rem(40);
+            &:nth-child(1) {
+                .faq__a {
+                    display: block;
+                }
+            }
+            &:nth-child(2) {
+                .faq__q {
+                    &::before {
+                        transform: translateY(-50%) rotate(0deg);
+                    }
+                    &.open {
+                        &::before {
+                            transform: translateY(-50%) rotate(90deg);
+                        }
+                    }
+                }
+            }
+        }
+        &__q {
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: rem(158);
+            padding: 0 rem(20);
+            border-radius: rem(80);
+            background-color: #cf7d4d;
+            color: #fff;
+            font-size: rem(32);
+            font-weight: 700;
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: rem(50);
+                width: rem(34);
+                height: rem(7);
+                background-color: #f5f5f5;
+            }
+            &::before {
+                transform: translateY(-50%) rotate(90deg);
+            }
+            .en {
+                display: block;
+                width: rem(72);
+                margin-right: rem(25);
+            }
+            &.open {
+                &::before {
+                    transform: translateY(-50%) rotate(0deg);
+                }
+            }
+        }
+        &__a {
+            display: none;
+            position: relative;
+            padding: rem(35) rem(40) 0 rem(120);
+            font-size: rem(28);
+            font-weight: 500;
+            line-height: 1.6;
+            letter-spacing: 0.02em;
+            .en {
+                position: absolute;
+                top: rem(35);
+                left: rem(20);
+                width: rem(72);
+            }
+        }
+    }
+}
+/*==============================================================================
+faq
+============================================================================= */
+@include pc {
+    .faq {
+        &--bg {
+            padding: 80px 0 90px;
+            background-color: #f5f5f5;
+        }
+        &__ttl01 {
+            width: 273px;
+            margin: 0 auto;
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        &__item {
+            width: 481px;
+            &:nth-child(1),
+            &:nth-child(2) {
+                .faq__a {
+                    display: block;
+                }
+            }
+        }
+        &__q {
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 101px;
+            margin-top: 40px;
+            padding: 0 15px;
+            border-radius: 50px;
+            background-color: #cf7d4d;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            &:hover {
+                opacity: 0.8;
+                transition: 0.3s;
+            }
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 33px;
+                width: 24px;
+                height: 5px;
+                background-color: #f5f5f5;
+            }
+            &::before {
+                transform: translateY(-50%) rotate(90deg);
+            }
+            .en {
+                display: block;
+                width: 50px;
+                margin-right: 15px;
+            }
+            &.open {
+                &::before {
+                    transform: translateY(-50%) rotate(0deg);
+                }
+            }
+        }
+        &__a {
+            display: none;
+            position: relative;
+            padding: 20px 20px 0 80px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+            .en {
+                position: absolute;
+                top: 20px;
+                left: 15px;
+                width: 50px;
+            }
+        }
+    }
+}

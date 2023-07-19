@@ -1,0 +1,306 @@
+/*==============================================================================
+tok
+============================================================================= */
+@include sp {
+    .tok {
+        &--bg {
+            padding: rem(60) 0 rem(70);
+            background: url(../images/tok_bg01_sp.webp) top center/ cover
+                no-repeat;
+        }
+        &__flex {
+            margin-top: rem(55);
+        }
+        &__ttl02 {
+            font-size: rem(54);
+            font-weight: 900;
+            line-height: 1.3;
+            text-align: center;
+        }
+        &__txt01 {
+            margin-top: rem(15);
+            padding-left: rem(30);
+            font-size: rem(30);
+            letter-spacing: 0.03em;
+            line-height: 1.6;
+            .bold {
+                font-weight: 900;
+            }
+        }
+        &__img01 {
+            width: rem(640);
+            margin: rem(25) auto 0;
+        }
+
+        &__item {
+            margin-top: rem(75);
+        }
+        &__ttl03 {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: rem(720);
+            height: rem(138);
+            padding-left: rem(148);
+            background: url(../images/tok_bg02_sp.webp) top right/ contain
+                no-repeat;
+            font-size: rem(60);
+            font-weight: 900;
+            line-height: 1.1;
+            color: #fff;
+            .num {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: rem(62);
+            }
+            .num02 {
+                font-size: rem(78);
+            }
+            .small {
+                font-size: rem(44);
+            }
+        }
+        &__lead {
+            margin-top: rem(25);
+            text-align: center;
+            font-size: rem(34);
+            font-weight: 700;
+            line-height: 1.4;
+            letter-spacing: 0.06em;
+            .bold,
+            .brown {
+                font-size: rem(40);
+                font-weight: 900;
+            }
+        }
+        &__flex02 {
+            margin-top: rem(30);
+        }
+
+        &__flex02__txt {
+            width: rem(622);
+            margin: rem(20) auto 0;
+            font-size: rem(30);
+            font-weight: 500;
+            line-height: 1.6;
+            letter-spacing: 0.01em;
+        }
+        &__lead02 {
+            position: relative;
+            width: rem(632);
+            margin: rem(55) auto 0;
+            padding: rem(17) 0;
+            font-size: rem(45);
+            text-align: center;
+            font-weight: 900;
+            &:before,
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: rem(8);
+                border-radius: rem(4);
+                background-color: #ffde00;
+            }
+            &:before {
+                top: 0;
+            }
+            &:after {
+                bottom: 0;
+            }
+        }
+        &__flex03 {
+            margin-top: rem(35);
+        }
+        &__img06 {
+            width: rem(655);
+            margin: 0 auto 0;
+        }
+        &__list02 {
+            margin: rem(30) auto 0 rem(30);
+            padding-left: rem(30);
+            border-left: rem(4) dotted #f45c11;
+        }
+        &__item02 {
+            counter-increment: num;
+            margin-top: rem(20);
+            padding-left: rem(25);
+            text-indent: rem(-20);
+            font-size: rem(28);
+            font-weight: 500;
+            letter-spacing: 0;
+            &::before {
+                content: counter(num) ".";
+            }
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+        }
+        &__ttl04 {
+            width: rem(630);
+            margin: rem(50) auto 0;
+        }
+    }
+}
+/*==============================================================================
+tok
+============================================================================= */
+@include pc {
+    .tok {
+        &--bg {
+            padding: 45px 0 80px;
+            background: url(../images/tok_bg01.webp) top center/ cover no-repeat;
+        }
+
+        &__flex {
+            display: flex;
+            align-items: center;
+            margin-top: 35px;
+            padding-left: 110px;
+        }
+        &__ttl02 {
+            width: 310px;
+            margin-right: 90px;
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 1.3;
+            .big {
+                font-size: 56px;
+            }
+        }
+        &__txt01 {
+            width: 410px;
+            font-size: 20px;
+            letter-spacing: 0.03em;
+            line-height: 1.7;
+            .bold {
+                font-weight: 900;
+            }
+        }
+        &__img01 {
+            margin-top: 40px;
+        }
+        &__list {
+            margin-top: 90px;
+        }
+        &__item {
+            margin-top: 63px;
+        }
+        &__ttl03 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 104px;
+            background: url(../images/tok_bg02.webp) top right/ contain
+                no-repeat;
+            font-size: 46px;
+            font-weight: 900;
+            color: #fff;
+            .num {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 46px;
+            }
+            .small {
+                font-size: 34px;
+            }
+        }
+        &__lead {
+            margin-top: 13px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 1.7;
+            letter-spacing: 0.06em;
+            .bold,
+            .brown {
+                font-size: 30px;
+                font-weight: 900;
+            }
+        }
+        &__flex02 {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            padding-left: 63px;
+        }
+        &__flex02__img {
+            width: 410px;
+            margin-right: 50px;
+        }
+        &__flex02__txt {
+            width: 425px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 2;
+        }
+        &__lead02 {
+            position: relative;
+            width: 881px;
+            margin: 30px auto 0;
+            padding: 20px 0;
+            font-size: 26px;
+            line-height: 1;
+            text-align: center;
+            font-weight: 900;
+            &:before,
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 6px;
+                border-radius: 2px;
+                background-color: #ffde00;
+            }
+            &:before {
+                top: 0;
+            }
+            &:after {
+                bottom: 0;
+            }
+        }
+        &__flex03 {
+            display: flex;
+            margin-top: 30px;
+            padding-left: 63px;
+        }
+        &__img06 {
+            width: 410px;
+            margin-right: 35px;
+        }
+        &__list02 {
+            width: 440px;
+            margin-top: 10px;
+            padding-left: 20px;
+            border-left: 4px dotted #f45c11;
+        }
+        &__item02 {
+            counter-increment: num;
+            margin-top: 17px;
+            padding-left: 14px;
+            text-indent: -14px;
+            font-size: 16px;
+            font-weight: 500;
+            &::before {
+                content: counter(num) ".";
+            }
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+        }
+        &__ttl04 {
+            width: 672px;
+            margin: 40px auto 0;
+        }
+    }
+}

@@ -1,0 +1,163 @@
+/*==============================================================================
+down
+============================================================================= */
+@include sp {
+    .down {
+        &__bg01 {
+            padding: rem(60) 0 rem(110);
+            background: url(../images/down_bg01_sp.webp) top center/ cover
+                no-repeat;
+        }
+        &__ttl01 {
+            width: rem(710);
+            margin-left: rem(-30);
+        }
+        &__box {
+            position: relative;
+            margin-top: rem(35);
+        }
+        &__ttl02 {
+            width: rem(646);
+            margin: 0 auto;
+        }
+        &__img01 {
+            width: rem(646);
+            margin: rem(15) auto 0;
+        }
+        &__txt01 {
+            width: rem(625);
+            margin: rem(20) auto 0;
+            font-size: rem(30);
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.06em;
+            .orange {
+                font-weight: bold;
+            }
+            .brown {
+                font-weight: 900;
+            }
+            &--num02 {
+                width: 100%;
+                margin-top: rem(35);
+                letter-spacing: 0.04em;
+            }
+        }
+        &__txt02 {
+            width: rem(632);
+            margin: rem(70) auto 0;
+        }
+        &__img02 {
+            width: rem(646);
+            margin: rem(30) auto 0;
+        }
+        &__ttl03 {
+            width: rem(512);
+            margin: rem(15) auto 0;
+        }
+        &__ttl04 {
+            width: rem(653);
+            margin: rem(75) 0 0 rem(27);
+        }
+        &__box02 {
+            width: rem(625);
+            margin: 0 auto;
+        }
+        &__note {
+            width: rem(625);
+            margin: 0 auto;
+            margin-top: rem(10);
+            color: #666666;
+            font-size: rem(22);
+            font-weight: 500;
+            line-height: 1.6;
+            &--num02 {
+                margin-top: rem(20);
+            }
+        }
+        &__graph {
+            width: rem(690);
+            margin: rem(20) 0 0 rem(-30);
+        }
+    }
+}
+/*==============================================================================
+down
+============================================================================= */
+@include pc {
+    .down {
+        &__bg01 {
+            padding: 60px 0 75px;
+            background: url(../images/down_bg01.webp) top center/ 2000px
+                no-repeat;
+        }
+        &__box {
+            position: relative;
+            margin-top: 54px;
+        }
+        &__ttl02 {
+            width: 503px;
+        }
+        &__img01 {
+            position: absolute;
+            top: -30px;
+            right: 65px;
+            width: 384px;
+        }
+        &__txt01 {
+            width: 500px;
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.8;
+            .orange {
+                font-weight: bold;
+            }
+            .brown {
+                font-weight: 900;
+            }
+            &--num02 {
+                margin-top: 0;
+                padding-top: 20px;
+                font-size: 22px;
+            }
+        }
+        &__txt02 {
+            margin-top: 82px;
+        }
+        &__img02 {
+            width: 895px;
+            margin: 13px auto 0;
+        }
+        &__ttl03 {
+            width: 825px;
+            margin: -5px auto 0;
+        }
+        &__ttl04 {
+            width: 908px;
+            margin: 60px 0 0 90px;
+        }
+        &__box02 {
+            position: relative;
+            min-height: 301px;
+            margin-top: 35px;
+        }
+        &__note {
+            width: 477px;
+            margin-top: 18px;
+            color: #666666;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 1.8;
+            &--num02 {
+                margin-top: 10px;
+            }
+        }
+        &__graph {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 460px;
+        }
+    }
+}
