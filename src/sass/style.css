@@ -1912,7 +1912,7 @@ contact
     height: 1.2rem;
     margin: 0.3rem auto 0;
     padding-bottom: 0.05rem;
-    background: url(../images/contact_bg01_sp.webp) top center/100% 100% no-repeat;
+    background-color: #fff;
     font-size: 0.36rem;
     color: #fff;
     line-height: 1;
