@@ -102,10 +102,10 @@ ValidationClass = (function() {
 			}
 		);
 
-		self.disabled();
-		self.selectbox();
-		self.radio();
-		self.checkbox();
+//		self.disabled();
+//		self.selectbox();
+//		self.radio();
+//		self.checkbox();
 		self.submit();
 
 	};
