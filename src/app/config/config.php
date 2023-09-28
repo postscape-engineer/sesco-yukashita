@@ -22,7 +22,9 @@ define('BASE_URL', str_replace($_SERVER['DOCUMENT_ROOT'], '', $base_path).'/');
 // メール送信関連　共通
 //====================================
 /** システムMailの送り主 */
-define('SYSTEM_MAIL_FROM', 'info@sesco.co.jp');
+// define('SYSTEM_MAIL_FROM', 'info@sesco.co.jp');
+define('SYSTEM_MAIL_FROM', 'saki.ogawa@postscape.jp');
+
 
 //====================================
 // 【お問い合わせ】フォーム関連
