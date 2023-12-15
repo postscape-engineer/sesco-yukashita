@@ -700,6 +700,11 @@ down
     width: 6.32rem;
     margin: 0.7rem auto 0;
   }
+  .down__note01 {
+    font-size: 0.2rem;
+    text-align: right;
+    margin: 0.16rem 0.2rem 0 0;
+  }
   .down__img02 {
     width: 6.46rem;
     margin: 0.3rem auto 0;
@@ -774,6 +779,11 @@ down
   }
   .down__txt02 {
     margin-top: 82px;
+  }
+  .down__note01 {
+    font-size: 10px;
+    margin-top: 10px;
+    text-align: right;
   }
   .down__img02 {
     width: 895px;
@@ -1731,7 +1741,17 @@ Footer
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: column;
     height: 1.7rem;
+  }
+  .footer__text {
+    display: block;
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 0.2rem;
+    letter-spacing: 0.06em;
+    font-family: "Arial";
+    padding-bottom: 0.1rem;
   }
   .footer__copy {
     display: block;
@@ -1750,7 +1770,17 @@ Footer
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: column;
     height: 100px;
+  }
+  .footer__text {
+    display: block;
+    color: #f5f5f5;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    font-family: "Arial";
+    padding-bottom: 0.2rem;
   }
   .footer__copy {
     display: block;

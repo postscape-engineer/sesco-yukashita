@@ -47,6 +47,11 @@ down
             width: rem(632);
             margin: rem(70) auto 0;
         }
+        &__note01 {
+            font-size: rem(20);
+            text-align: right;
+            margin: rem(16) rem(20) 0 0;
+        }
         &__img02 {
             width: rem(646);
             margin: rem(30) auto 0;
@@ -124,6 +129,11 @@ down
         }
         &__txt02 {
             margin-top: 82px;
+        }
+        &__note01 {
+            font-size: 10px;
+            margin-top: 10px;
+            text-align: right;
         }
         &__img02 {
             width: 895px;

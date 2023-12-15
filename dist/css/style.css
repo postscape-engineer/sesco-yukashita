@@ -737,6 +737,11 @@ down
     width: 6.32rem;
     margin: 0.7rem auto 0;
   }
+  .down__note01 {
+    font-size: 0.2rem;
+    text-align: right;
+    margin: 0.16rem 0.2rem 0 0;
+  }
   .down__img02 {
     width: 6.46rem;
     margin: 0.3rem auto 0;
@@ -811,6 +816,11 @@ down
   }
   .down__txt02 {
     margin-top: 82px;
+  }
+  .down__note01 {
+    font-size: 10px;
+    margin-top: 10px;
+    text-align: right;
   }
   .down__img02 {
     width: 895px;
